@@ -124,5 +124,15 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9rem;
-  color: #999;
+  color: #e7e7e7;
+}
+
+a {
+  color: rgb(218, 97, 56);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 105, 25);
+  text-decoration: none;
 }

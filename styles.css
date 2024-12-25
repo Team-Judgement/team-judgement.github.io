@@ -3,12 +3,12 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: "Special Elite", serif;
+  font-family: 'Special Elite', serif;
   font-weight: 400;
   font-style: normal;
   color: #f5f5f5;
   background-color: #0f0100;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
   line-height: 1.6;
 }
 
@@ -18,24 +18,48 @@ body {
   max-width: 1200px;
 }
 
-/* Header */
 header {
-  font-family: "Road Rage", serif;
+  font-family: 'Road Rage', serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #690400;
-  border-bottom: 2px solid #444;
+  background-color: #6b1313d2;
+  border: 2px solid #444;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   padding: 1rem 0;
 }
 
-header h1 {
+header #superText {
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+header #superText img {
+  height: 50px;
+  width: 50px;
+  border-radius: 35%;
+  transition: border-radius 0.2s ease;
+}
+
+header #superText img:hover {
+  border-radius: 25%;
+}
+
+header #superText h1 {
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-shadow: 2px 2px 0 #444;
   margin: 0;
   text-align: center;
+  color: yellow;
 }
 
 header nav ul {
@@ -62,14 +86,14 @@ header nav ul li a:hover {
   color: #c0392b;
 }
 
-/* Intro Section */
 .section {
   padding: 2rem;
   text-align: center;
-  background-color: #6b1313;
-  border: 1px solid #444;
+  background-color: #6b131383;
+  border: 2px solid #444;
   margin-top: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
 }
 
 .section h2 {
@@ -83,7 +107,6 @@ header nav ul li a:hover {
   font-style: italic;
 }
 
-/* Gallery */
 .gallery {
   padding: 2rem 0;
 }
@@ -95,30 +118,14 @@ header nav ul li a:hover {
   margin-bottom: 2rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  text-align: center; /* Added to center align all grid items */
-}
-
-.grid .item {
-  background-color: #6b1313;
-  border: 1px solid #444;
-  padding: 2rem;
-  text-align: center;
-  color: #f5f5f5;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-/* Footer */
 footer {
-  background-color: #690400;
+  background-color: #6b1313d2;
   text-align: center;
   padding: 1rem 0;
   margin-top: 1rem;
-  border-top: 2px solid #444;
+  border: 2px solid #444;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 footer p {
@@ -130,6 +137,7 @@ footer p {
 a {
   color: rgb(218, 97, 56);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
